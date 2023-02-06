@@ -1,0 +1,47 @@
+Feladatok: minden csoportból készíts el 4 feladatot
+********** , a "monogram_alapok.php" állomnyba dolgozz
+	
+Beadás: a !bead\2022-10-06 mappába "monogram_alapok.php" 
+*******
+ 
+1. csoport (egyszerű számítási összefüggések készítése és kiíratás, 1 pontos feladatok)
+***************************************************************************************
+Írjon egy php programot, amely kiszámolja és kiírja a 2 m élhosszúságú kocka felületét.
+Írjon egy php programot, amely kiszámolja és kiírja a 2 m sugarú gömb térfogatát. A gömb térfogata V=4/3 r3p.
+Írjon egy php programot, amely kiszámolja és kiírja egy derékszögű háromszög átfogójának hosszát, ha a befogói 2 és 5m hosszúak.
+Írjon egy php programot, amely kiszámolja és kiírja egy bruttó 200 Ft-ba kerülő áru ÁFA tartalmát, ha az ÁFA 15%.
+Írjon egy php programot, amely kiszámolja és kiírja a megadott testmagasság alapján az ideális testsúly értékét. Az ideális testsúly kiszámításának képlete:
+T=0.9*(M-100), ahol M a cm-ben megadott testmagasság.
+
+
+2. csoport (HTML kód előállítása php kóddal, 2 pontos feladatok)
+****************************************************************
+Írjon egy php programot, amellyel a HTML szót kiíratja 7-es mérettel, piros színnel és Arial betűtípussal.
+Írjon egy php programot, amellyel a Google szóra egy linket állít elő és a link a www.google.com oldalra mutat.
+Írjon egy php programot, amely egy tetszőleges nevű képet 300x200 méretben helyez el az oldalon.
+Írjon egy php programot, amely előállít egy 2x2 cellát tartalmazó, tetszőleges méretű táblázatot hoz létre és mindegyik cellában a Google szót helyezi el a cellák jobb felső sarkába.
+Írjon egy php programot, amely előállít egy XxY cellát tartalmazó táblázatot hoz létre és mindegyik cellában a Google szót helyezi el a cellák jobb felső sarkába.
+Állítson elő php kóddal egy űrlapot, amely tartalmaz egy szövegmezőt, egy elküldő gombot, egy jelölő négyzetet és egy lenyíló listát, amelyben a hét napjait sorolja fel.
+
+
+3. csoport (Ciklus és feltételes utasítások használata, 3 pontos feladatok)
+***************************************************************************
+Írjon egy programot, amely kiszámolja az 1-től 10-ig terjedő egész számok átlagát ciklus utasítás használatával.
+Írjon egy programot, amely kiszámolja az 1-től 20-ig terjedő egész számok négyzetét, de csak azokat az értékeket írja ki, amely nagyobb, mint 30. Használjon ciklus utasítást.
+Írjon egy programot, amely kiszámolja az 1*3*5*7*9*11*13*15*17*19 értéket ciklus utasítás segítségével.
+Írjon egy programot, amelyben egy 20 elemű tetszőleges tömböt hoz létre és kiírja a tömb minden második elemét.
+Írjon egy programot, amely kiszámolja a körök területét, amikor a körök sugara az 1-től 10-ig terjedő egész számok, de csak akkor írja ki az értékeket, ha a terület nagyobb, mint 20.
+Írjon egy programot ciklus utasítást használva, amely az alábbi elrendezésű szöveget írja ki a képernyőre:
+2
+22
+222
+2222
+Írjon egy programot ciklusutasítást használva, amely az alábbi elrendezésű szöveget írja ki a képernyőre:
+2222
+222
+22
+2
+Írjon egy programot, amelyben egy 10 elemű tömböt tetszőleges értékekkel tölt fel, majd kiírja a tömb legkisebb és legkisebb elemét.
+Írjon egy programot, amelyben egy 10 elemű tömböt tetszőleges értékekkel tölt fel, majd kiírja, hogy a tömbben hány darab olyan szám van, amely nagyobb, mint 10 és kisebb 20.
+Írjon egy programot, amelyben egy 10 elemű tömböt tetszőleges értékekkel tölt fel, majd a tömb elemeit átmásolja egy másik tömbbe úgy, hogy az elemek fordított sorrendben helyezkedjenek el benne.
+Írjon egy programot, amelyben egy 10 elemű tömböt tetszőleges értékekkel tölt fel, amelyek valamilyen termékek nettó árai, majd számolja ki és írassa ki a termékek bruttó árait, ha az ÁFA 20 %.

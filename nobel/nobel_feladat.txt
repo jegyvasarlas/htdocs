@@ -1,0 +1,3 @@
+Feladatok:
+- Olvasd be php segítségével a nobel.csv fájl tartmát és tárold el egy megfelelő adatszerkezetben. Ügyelj arra, hogy a beolvasás után a vezetéknév és keresztnév ne külön-külön adatmezőben tárolódjon, hanem egy név adatmezőben.
+- Az eltárolt rekordokat jelenítsd meg egy html oldalon táblázatos formában. Ügyelj arra, hogy a táblázat sorai elkülöníthetőek legyen egymástól!

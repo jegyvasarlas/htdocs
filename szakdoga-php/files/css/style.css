@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+html, body, .container {
+	/*background-color: #242424;*/
+	background-color: #1a1a1a;
+}
+
+.mav {
+	color: #bbd8fa;
+}
+
+.bg-dark {
+	background-color: #242424 !important;
+}
+
+a {
+	color: #bbd8fa;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.a:hover {
+	color: #53a2fc;
+}
+
+h3 {
+	text-align: left;
+	margin-left: 4%;
+	margin-right: 4%;
+	color: #bbd8fa;
+}
+
+h2 {
+	text-align: left;
+	color: #eee;
+}
+
+p {
+	text-align: left;
+	font-size: 18px;
+	line-height: 2;
+	color: #eee;
+}
+
+p#email {
+	text-align: center;
+	font-size: 16px;
+	line-height: 2;
+	color: #eee;
+}
+
+h1 {
+	color: #eee;
+}

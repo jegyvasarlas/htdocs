@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+echo("<br>");
+
+$sql1 = "DROP DATABASE IF EXISTS myDB"; $conn->query($sql1);
+$sql1 = "CREATE DATABASE IF NOT EXISTS myDB";
+if ($conn->query($sql1) === TRUE) {
+  echo "Database created successfully";
+} else {
+  echo "Error creating database: " . $conn->error;
+}
+echo("<br>");
+
+$connectdb = "USE myDB"; //$conn->query($connectdb);
+if ($conn->query($connectdb) === TRUE) {
+    echo "Use successfully";
+} else {
+    echo "Error use: " . $conn->error;
+}
+echo("<br>");
+
+$sql = "CREATE TABLE MyGuests (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(30) NOT NULL,
+    lastname VARCHAR(30) NOT NULL,
+    email VARCHAR(50),
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    )";
+if ($conn->query($sql) === TRUE) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . $conn->error;
+}
+echo("<br>");
+
+$sql3 = "INSERT INTO MyGuests (firstname, lastname, email)
+VALUES ('John', 'Doe', 'john@example.com')";
+if ($conn->query($sql3) === TRUE) {
+    $last_id = $conn->insert_id;
+    echo "New record created successfully. Last inserted ID is: " . $last_id;
+  } else {
+    echo "Error: " . $sql3 . "<br>" . $conn->error;
+}
+echo("<br>");
+?>
+
+<?php
+$sql = "SELECT id, firstname, lastname, email FROM MyGuests";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    echo "<h1>".$row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. " - Email: " . $row["email"]. " " ."</h1>";
+  }
+} else {
+  echo "0 results";
+}
+echo("<br>");
+$conn->close();
+?>
+
+</body>
+</html>
