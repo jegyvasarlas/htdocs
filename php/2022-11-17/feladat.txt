@@ -1,0 +1,10 @@
+Készíts a "2022-11-15-SW" feladat forrásai alapján php-mysql alkalmazást.
+Minden forrásod a "2022-11-17" mappába ments.
+Az oldaladat külső css, külső js fájlokkal design-old, bootstap-ot ne használj.
+Egy php fájlt tartalmazzon a megoldásod, "index.php" néven.
+Form-ban jelenítsd meg az sql feladat sorszámait tartalmazó gombokat, a form saját magát dolgozza fel.
+Táblázatos formában jelenítsd meg az adott sql futásának eredményét (stílusold!), - a js guruk a megjelenítést elvégezhetik js pop-up ablakban.
+
+Beadás módja:  tömörítsd a "2022-11-17" mappát "2022-11-17.zip" néven, és töltsd fel a feladatba.
+
+Egy osztályzatot kapsz rá.
