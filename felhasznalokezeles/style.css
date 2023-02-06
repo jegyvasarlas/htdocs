@@ -1,0 +1,36 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body.login, body.register{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    zoom: 150%
+}
+body.other {
+    zoom: 150%
+}
+input {
+    margin: 5px;
+    padding: 5px;
+}
+html {
+    background-color: #357085;
+    color: #eee;
+}
+.center {
+    text-align: center;
+}
+a {
+    color: #f9e78f;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5907;
+}
+
+a:visited {
+    color: #f9e78f;
+}
