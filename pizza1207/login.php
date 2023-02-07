@@ -19,17 +19,25 @@
 <body>
     <?php echo $menu; ?>
 
+    <?php
+        if(!isset($_SESSION["user"])):
+    ?>
     <form action="login-validate.php" method="POST">
         Felhasználónév: <input type="text" name="username" /> <br/><br/>
         Jelszó: <input type="password" name="password" /> <br/><br/>
         <input type="submit" value="Bejelentkezés" />
     </form>
-
+    <?php
+        endif;
+    ?>
     <?php
         if(isset($login)){
             echo "<h2>";
             if( strcmp($login, "OK") == 0 )
-                echo "Sikeres a bejelentkezés!";
+            {
+                echo "Sikeres a bejelentkezés!<br/>";
+                echo "Üdvözöllek " . $_SESSION["user"] . " ! ";
+            }
             else
                 echo "Sikertelen a bejelentkezés!";
             echo "</h2>";

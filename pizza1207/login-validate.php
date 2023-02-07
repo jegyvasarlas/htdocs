@@ -1,6 +1,7 @@
 <?php
 // login-validate.php
-require("db-connection.php");
+include "functions.php";
+require_once("db-connection.php");
 
 $user = "";
 $psw = "";
@@ -24,10 +25,11 @@ echo $sql;
 $result = $Con->query($sql);
 
 if($result->num_rows == 1){
-    //header("Location: login.php?login=OK");
+    $_SESSION["user"] = $user;
+    header("Location: login.php?login=OK");
 }
 else{
-    //header("Location: login.php?login=NO");
+    header("Location: login.php?login=NO");
 }
 
 
