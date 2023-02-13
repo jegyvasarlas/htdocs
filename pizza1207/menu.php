@@ -24,10 +24,14 @@ if(!isset($_SESSION["user"]))
     $menu .= '
 <div class="menu-item">
         <a href="logout.php" class="menu-button">Kijelentkezés</a>
-        </div>';
+        </div><div class="menu-item">
+        <a href="kosar.php" class="menu-button">Kosar</a>
+</div>';
 }
 $menu .= '
-   <div class="menu-item"></div>
+   <div class="menu-item">
+           <a href="pizzak.php" class="menu-button">Pizzak</a>
+</div>
   </nav>
 ';
 
