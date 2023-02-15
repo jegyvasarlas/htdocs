@@ -17,7 +17,7 @@ function Rendelesek(){
               	LEFT JOIN vevo ON rendeles.vazon = vevo.vazon
                 LEFT JOIN tetel ON rendeles.razon = tetel.razon
                 LEFT JOIN pizza ON tetel.pazon = pizza.pazon
-              ORDER BY vevo.vnev, rendeles.idopont;";
+              ORDER BY rendeles.idopont desc;";
 
     // echo $query;
 
@@ -121,3 +121,16 @@ function FilterInputText($input){
     return $input;
 }
 ?>
+<style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        zoom: 1.5;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
