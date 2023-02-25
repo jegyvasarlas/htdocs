@@ -2,6 +2,7 @@
 include 'functions.php';
 session_unset(); // Kiüríti a munkamenetet
 session_destroy(); // Eldobja a munkamenetet
+setcookie('oldalak', '', time()-1); // Eldobja a cookie-t
 include 'menu.php';
 ?>
 <!DOCTYPE html>

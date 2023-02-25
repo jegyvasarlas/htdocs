@@ -2,6 +2,14 @@
 session_start();
 require("db-connection.php");
 
+function setMyCookie()
+{
+    $aktualis = "";
+    if(isset($_COOKIE['oldalak']))
+        $aktualis = $_COOKIE['oldalok'];
+    $page = $aktualis . " -> " . $_SERVER['REQUEST_URI'];
+    setcookie("oldalak", $page);
+}
 function Rendelesek(){
 
     $Con = ConnectDB();

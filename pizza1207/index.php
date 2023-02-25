@@ -34,6 +34,16 @@
         </form>
     </section>
 
+    <section>
+        <h2>Pizza kereses </h2>
+        <form>
+            Vevő: <input type="text" />     <br/>
+            Futár: <input type="text" />    <br/>
+            Pizza: <input type="text" />    <br/>
+            <input type="submit" value="Keresés" />
+        </form>
+    </section>
+
     <!-- 2. Feladat
         Új pizza felvétele:
         - Új menüpont alatt érhető el a menüsorból
@@ -51,6 +61,11 @@
         - dátum: mindig az akatuális
         !! 2 táblába kell befűzni: rendelés és tétel 
      -->
+    <h2>PHP Cookie es Session adatok</h2>
+    <?php
+        echo "<h3>".print_r($_SESSION)."</h3>";
+        echo "<h3>".print_r($_COOKIE)."</h3>";
+    ?>
 
 </body>
 </html>
