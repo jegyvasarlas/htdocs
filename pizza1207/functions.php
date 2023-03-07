@@ -14,18 +14,7 @@ function Rendelesek(){
 
     $Con = ConnectDB();
 
-    $query = "SELECT
-              	vevo.vnev,
-                rendeles.idopont,
-                pizza.pnev,
-                pizza.par,
-                tetel.db,
-                (pizza.par * tetel.db) AS 'Összesen'
-              FROM rendeles
-              	LEFT JOIN vevo ON rendeles.vazon = vevo.vazon
-                LEFT JOIN tetel ON rendeles.razon = tetel.razon
-                LEFT JOIN pizza ON tetel.pazon = pizza.pazon
-              ORDER BY rendeles.idopont desc;";
+    $query = "call pr_RendelesekListazasa();";
 
     // echo $query;
 
@@ -76,13 +65,11 @@ function Rendelesek(){
 function PizzaSzuresArSzerint($minAr, $maxAr, $rendez){
     $Con = ConnectDB();
 
-    $sql = "SELECT
-	            pizza.pnev,
-                pizza.par
-            FROM pizza
-            WHERE
-	            pizza.par BETWEEN $minAr AND $maxAr
-            ORDER BY pizza.pnev $rendez;";
+    $sql = "call pr_PizzakSzuresArSzerint(@minAr, @maxAr, @rendez);";
+
+    $Con->query("SET @minAr = $minAr");
+    $Con->query("SET @maxAr = $maxAr");
+    $Con->query("SET @rendez = '$rendez'");
 
     $result = $Con->query($sql);
 

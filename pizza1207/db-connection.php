@@ -3,8 +3,8 @@
 function ConnectDB()
 {
     $server = "localhost";
-    $user = "root";
-    $psw = "";
+    $user = "bela";
+    $psw = "bela123";
     $db = "pizza";
 
     $Con = new mysqli($server, $user, $psw, $db);

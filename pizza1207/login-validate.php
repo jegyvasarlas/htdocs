@@ -18,7 +18,9 @@ $user = $Con->real_escape_string($user);
 $psw = $Con->real_escape_string($psw);
 
 $psw_hash = sha1($psw);
-$sql = "SELECT FelhasznaloNev FROM felhasznalok WHERE FelhasznaloNev LIKE '$user' AND Jelszo LIKE '$psw_hash';";
+$Con->query("SET @user = '$user'");
+$Con->query("SET @psw_hash = '$psw_hash'");
+$sql = "CALL login('$user', '$psw_hash')";
 
 echo $sql;
 
