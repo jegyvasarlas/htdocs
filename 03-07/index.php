@@ -13,6 +13,15 @@ session_start();
             font-family: Arial, Helvetica, sans-serif;
             zoom: 1.25;
         }
+        div.row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div.half {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -43,6 +52,15 @@ document.getElementById('test_sorszam').onchange = function() {
     }
     else if (this.value == 1) {
         document.getElementById('kerdessor').innerHTML = '<?php echo ElsoKerdesek(); ?>';
+    }
+    else if (this.value == 2) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo MasodikKerdesek(); ?>';
+    }
+    else if (this.value == 3) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo HarmadikKerdesek(); ?>';
+    }
+    else if (this.value == 4) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo NegyedikKerdesek(); ?>';
     }
     else document.getElementById('kerdessor').innerHTML = this.value;
 }
