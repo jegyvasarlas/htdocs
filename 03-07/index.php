@@ -1,5 +1,5 @@
 <?php
-include 'kerdessorok/elso.php';
+include 'kerdessorok/feladatok.php';
 session_start();
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,30 @@ document.getElementById('test_sorszam').onchange = function() {
     else if (this.value == 4) {
         document.getElementById('kerdessor').innerHTML = '<?php echo NegyedikKerdesek(); ?>';
     }
-    else document.getElementById('kerdessor').innerHTML = this.value;
+    else if (this.value == 5) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo OtodikKerdesek(); ?>';
+    }
+    else if (this.value == 6) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo HatodikKerdesek(); ?>';
+    }
+    else if (this.value == 7) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo HetedikKerdesek(); ?>';
+    }
+    else if (this.value == 8) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo NyolcadikKerdesek(); ?>';
+    }
+    else if (this.value == 9) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo KilencedikKerdesek(); ?>';
+    }
+    else if (this.value == 10) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo TizedikKerdesek(); ?>';
+    }
+    else if (this.value == 11) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo TizenegyedikKerdesek(); ?>';
+    }
+    else if (this.value == 12) {
+        document.getElementById('kerdessor').innerHTML = '<?php echo TizenkettedikKerdesek(); ?>';
+    }
 }
 </script>
 </body>
