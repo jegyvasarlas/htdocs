@@ -1,12 +1,10 @@
 <?php
-function ConnectDB()
-{
+function ConnectDB() {
     $con = new mysqli('localhost','root','','hamburger');
     if ($con->connect_error) {
         die('Could not connect: ' . $con->connect_error);
     }
-    return $con;
-}
+    return $con; }
 function FilterInputText($input){
     $input = trim($input);
     $input = stripslashes($input);

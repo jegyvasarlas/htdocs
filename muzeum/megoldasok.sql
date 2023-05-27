@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS muzeum;
+USE muzeum;
+CREATE TABLE kiallitasok (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(100) NOT NULL,
+    leiras TEXT NOT NULL,
+    kezdete DATE NOT NULL,
+    vege DATE NOT NULL,
+    tarlatvezeto VARCHAR(50) NOT NULL
+);
